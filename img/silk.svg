@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2c9c"/>
+      <stop offset="0.55" stop-color="#0a2484"/>
+      <stop offset="1" stop-color="#061865"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3460ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3a68ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3460ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1400" height="800" fill="url(#base)"/>
+  <g filter="url(#blur)">
+    <ellipse cx="380" cy="260" rx="360" ry="220" fill="#2550f0" opacity="0.55"/>
+    <ellipse cx="1050" cy="620" rx="420" ry="180" fill="#03104a" opacity="0.75"/>
+    <ellipse cx="1150" cy="140" rx="280" ry="200" fill="#1c47db" opacity="0.5"/>
+    <ellipse cx="200" cy="720" rx="300" ry="140" fill="#04145a" opacity="0.6"/>
+  </g>
+  <g fill="none" filter="url(#soft)">
+    <path d="M-100 700 C 250 330, 620 720, 1500 180" stroke="url(#fold)" stroke-width="90"/>
+    <path d="M150 -80 C 360 320, 760 180, 980 900" stroke="#3b6bff" stroke-opacity="0.22" stroke-width="70"/>
+    <path d="M700 -100 C 820 260, 1150 360, 1500 300" stroke="#041452" stroke-opacity="0.55" stroke-width="110"/>
+    <path d="M-100 380 C 200 260, 420 520, 760 430" stroke="#4a76ff" stroke-opacity="0.18" stroke-width="50"/>
+  </g>
+</svg>
